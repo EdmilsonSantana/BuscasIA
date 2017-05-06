@@ -18,9 +18,7 @@ public class BuscaUniforme extends Busca {
 		while (!fila.isEmpty() && !achou) {
 
 			No<T> no = fila.poll();
-			System.out.println(no.toString());
-			System.out.println(no.getCustoCaminho());
-			System.out.println(no.getEstado().getHeuristica(puzzle.getObjetivo()));
+			
 			if (super.isObjetivo(puzzle, no)) {
 				achou = Boolean.TRUE;
 				noObjetivo = no;

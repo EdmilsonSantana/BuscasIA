@@ -12,8 +12,14 @@ public class AgentePuzzle {
 	}
 
 	public <T extends Estado> String resolverPuzzle(Puzzle<T> puzzle) {
-
-		return this.explorar(busca.busca(puzzle));
+		No<T> resultado = busca.busca(puzzle);
+		String logProcessamento = "";
+		if (resultado != null) {
+			logProcessamento = this.explorar(resultado);
+		} else {
+			logProcessamento = "Não existe uma solução para este caso";
+		}
+		return logProcessamento;
 	}
 
 	private <T extends Estado> String explorar(No<T> no) {

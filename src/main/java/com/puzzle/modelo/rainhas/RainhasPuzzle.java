@@ -22,15 +22,17 @@ public class RainhasPuzzle extends Puzzle<Tabuleiro> implements Otimizacao<Tabul
 		List<Tabuleiro> tabuleiros = new ArrayList<>();
 
 		Tabuleiro novoTabuleiro = null;
-		for (int rainha = 1; rainha < tabuleiro.getLength(); rainha++) {
+		for(int rainha = 1; rainha < tabuleiro.getLength(); rainha++) {
+			for (int permutacao = rainha + 1; permutacao <= tabuleiro.getLength(); permutacao++) {
 
-			int linha = tabuleiro.getLinha(rainha);
-			int linhaVizinha = tabuleiro.getLinha(rainha + 1);
+				int linha = tabuleiro.getLinha(rainha);
+				int linhaVizinha = tabuleiro.getLinha(permutacao);
 
-			novoTabuleiro = tabuleiro.clone();
-			novoTabuleiro.moverRainha(linha, linhaVizinha);
+				novoTabuleiro = tabuleiro.clone();
+				novoTabuleiro.moverRainha(linha, linhaVizinha);
 
-			tabuleiros.add(novoTabuleiro);
+				tabuleiros.add(novoTabuleiro);
+			}
 		}
 
 		return tabuleiros;
