@@ -1,50 +1,109 @@
 package aprendizagem;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import aprendizagem.distancias.Distancia;
+import utils.Utils;
 
 public class Knn {
 
 	private final Distancia distancia;
 
-	private Knn(Distancia distancia) {
+	public Knn(Distancia distancia) {
 		this.distancia = distancia;
 	}
 
-	public List<Amostra> getVizinhos(DataSet dataSet, Integer vizinhos) {
-		List<Amostra> classificacoes = new ArrayList<>();
-		List<Amostra> amostrasTeste = dataSet.getAmostrasTeste(2);
-		for (Amostra teste : amostrasTeste) {
-			classificacoes.add(this.getVizinhoMaisProximo(dataSet.getAmostrasTreino(), teste, vizinhos));
+	public List<Classificacao> classificar(DataSet dataSet, Integer vizinhos) {
+		
+		Utils.getLogger().info(String.format("Classificando com %d vizinhos e com distância %s",
+				vizinhos, distancia));
+		
+		List<Classificacao> classificacoes = new ArrayList<>();
+		
+		for (Amostra teste : dataSet.getAmostrasTeste()) {
+			classificacoes.add(this.getClassificacao(dataSet.getAmostrasTreino(), teste, vizinhos));
 		}
 		
 		return classificacoes;
 	}
 
-	private Amostra getVizinhoMaisProximo(List<Amostra> amostras, Amostra teste, Integer vizinhos) {
+	private Classificacao getClassificacao(List<Amostra> amostras, Amostra teste, Integer vizinhos) {
 
-		Amostra vizinhoProximo = amostras.remove(0);
-		Double maisProximo = distancia.getDistancia(vizinhoProximo, teste);
+		Map<Amostra, Double> distanciaPorAmostra = new HashMap<>();
 
 		for (Amostra amostra : amostras) {
-			
+
 			Double distanciaAmostra = distancia.getDistancia(amostra, teste);
-			
-			if (distanciaAmostra < maisProximo) {
-				vizinhoProximo = amostra;
-				maisProximo = distanciaAmostra;
-			}
+
+			distanciaPorAmostra.put(amostra, distanciaAmostra);
 		}
-		return vizinhoProximo;
+		// [[0.72, 0.8907563025210083, 0.1946902654867257, 0.6771737205595891, 0.6149966375252185, 0.5892034233048058, 0.4758345789735925, 0.0, 1, 0]]
+		return this.getClassificacaoVizinho(this.getVizinhosProximos(distanciaPorAmostra, vizinhos));
 	}
 
-	public static void main(String[] args) {
-		DataSet dataSet = new DataSet("dota-treino.csv", "dota-teste.csv", 0);
-		Knn knn = new Knn(Distancia.createInstance(Distancia.DISTANCIA_EUCLIDIANA));
+	private List<Amostra> getVizinhosProximos(Map<Amostra, Double> distanciaPorAmostra, Integer vizinhos) {
 
-		System.out.println(dataSet.compararClassificacoes(knn.getVizinhos(dataSet, 1)));
+		List<Entry<Amostra, Double>> distanciasOrdenadas = new ArrayList<>(distanciaPorAmostra.entrySet());
+		
+		Collections.sort(distanciasOrdenadas, new ComparadorDistancias());
+		
+		List<Amostra> vizinhosProximos = new ArrayList<>();
+		
+		while(vizinhos > 0) {
+			Entry<Amostra, Double> vizinhoProximo = distanciasOrdenadas.get(vizinhos - 1);
+			vizinhosProximos.add(vizinhoProximo.getKey());
+			vizinhos -= 1;
+		}
+		
+		return vizinhosProximos;
+	}
+
+	private Classificacao getClassificacaoVizinho(List<Amostra> vizinhos) {
+		
+		Map<Classificacao, Integer> classificacoes = this.contarClassificacoes(vizinhos);
+		
+		Entry<Classificacao, Integer> classificacaoVizinho = null;
+		
+		for (Entry<Classificacao, Integer> classificacao : classificacoes.entrySet()) {
+			
+			if (classificacaoVizinho == null || classificacao.getValue() < classificacaoVizinho.getValue()) {
+				classificacaoVizinho = classificacao;
+			}
+		}
+		return classificacaoVizinho.getKey();
+	}
+
+	private Map<Classificacao, Integer> contarClassificacoes(List<Amostra> vizinhos) {
+
+		Map<Classificacao, Integer> classificacoes = new HashMap<>();
+
+		Integer valorInicial = 1;
+
+		for (Amostra vizinho : vizinhos) {
+			Classificacao classificacao = vizinho.getClassificacao();
+
+			if (!classificacoes.containsKey(classificacao)) {
+				classificacoes.put(classificacao, valorInicial);
+			} else {
+				classificacoes.put(classificacao, classificacoes.get(classificacao) + valorInicial);
+			}
+		}
+
+		return classificacoes;
+	}
+
+	class ComparadorDistancias implements Comparator<Entry<Amostra, Double>> {
+
+		@Override
+		public int compare(Entry<Amostra, Double> a, Entry<Amostra, Double> b) {
+			return a.getValue().compareTo(b.getValue());
+		}
 	}
 
 }

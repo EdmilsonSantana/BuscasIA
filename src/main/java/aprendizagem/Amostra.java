@@ -8,41 +8,73 @@ public class Amostra {
 
 	private List<String> dados;
 
-	private final Integer indexClassificacao;
+	private final Classificacao classificacao;
 
 	private Amostra(String[] dados, Integer indexClassificacao) {
-		this.dados = Arrays.asList(dados);
-		this.indexClassificacao = indexClassificacao;
+		this.dados = new ArrayList<>(Arrays.asList(dados));
+		this.classificacao = new Classificacao(this.dados.remove(indexClassificacao.intValue()));
 	}
 
-	protected Double getDado(int index) {
-		Double dado = null;
+	public Double getNumero(Integer index) {
+
+		return Double.valueOf(this.getTexto(index));
+	}
+
+	public String getTexto(Integer index) {
+		String dado = null;
 		if (index >= 0 && index < this.dados.size()) {
-			dado = Double.valueOf(this.dados.get(index));
+			dado = this.dados.get(index);
 		}
 		return dado;
 	}
 
-	public List<Double> diferenca(Amostra amostra) {
-
-		List<Double> diferencas = new ArrayList<>();
-
-		for (int i = 0; i < this.dados.size(); i++) {
-			if (i != indexClassificacao) {
-				diferencas.add(this.getDado(i) - amostra.getDado(i));
-			}
-		}
-		return diferencas;
+	public void setDado(Double dado, Integer index) {
+		this.setDado(String.valueOf(dado), index);
 	}
 
-	public String getClassificacao() {
-		return this.dados.get(indexClassificacao);
+	public void setDado(String dado, Integer index) {
+		if (index >= 0 && index < this.dados.size()) {
+			this.dados.set(index, dado);
+		}
+	}
+	
+	public void adicionarDado(String dado) {
+		this.dados.add(dado);
+	}
+	
+	public void removerDado(Integer index) {
+		this.dados.remove(index.intValue());
+	}
+
+	public Integer getTamanho() {
+		return this.dados.size();
+	}
+
+	public Classificacao getClassificacao() {
+		return this.classificacao;
 	}
 
 	@Override
 	public String toString() {
 
-		return String.format("%s - %s", Arrays.toString(dados.toArray()), this.getClassificacao());
+		return Arrays.toString(dados.toArray());
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		Boolean equals = Boolean.FALSE;
+		if (obj != null && obj instanceof Amostra) {
+			Amostra amostra = (Amostra) obj;
+			if (this == obj || this.toString().equals(amostra.toString())) {
+				equals = Boolean.TRUE;
+			}
+		}
+		return equals;
+	}
+
+	@Override
+	public int hashCode() {
+		return this.toString().hashCode();
 	}
 
 	public static Amostra createInstance(String[] dados, int indexClassificacao) {
