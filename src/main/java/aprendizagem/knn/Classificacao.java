@@ -1,4 +1,4 @@
-package aprendizagem;
+package aprendizagem.knn;
 
 public class Classificacao implements Comparable<Classificacao> {
 

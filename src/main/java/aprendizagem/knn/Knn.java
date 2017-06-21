@@ -1,4 +1,4 @@
-package aprendizagem;
+package aprendizagem.knn;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,7 +8,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import aprendizagem.distancias.Distancia;
+import aprendizagem.Amostra;
+import aprendizagem.DataSet;
+import aprendizagem.knn.distancias.Distancia;
 import utils.Utils;
 
 public class Knn {

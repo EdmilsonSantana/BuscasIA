@@ -10,6 +10,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Random;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
@@ -123,6 +124,11 @@ public class Utils {
 		}
 
 		return LOG;
+	}
+	
+	public static Integer aleatorio() {
+		Random random  = new Random();
+		return random.nextInt();
 	}
 
 }

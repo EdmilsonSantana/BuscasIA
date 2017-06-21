@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import aprendizagem.knn.Classificacao;
+
 public class Amostra {
 
 	private List<String> dados;

@@ -1,4 +1,4 @@
-package aprendizagem.distancias;
+package aprendizagem.knn.distancias;
 
 import aprendizagem.Amostra;
 

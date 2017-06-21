@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import aprendizagem.knn.Classificacao;
 import aprendizagem.transformacoes.Normalizacao;
 import aprendizagem.transformacoes.Transformacao;
 import utils.Utils;

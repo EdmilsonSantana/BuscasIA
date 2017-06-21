@@ -7,8 +7,8 @@ import java.util.Set;
 import java.util.TreeMap;
 
 import aprendizagem.Amostra;
-import aprendizagem.Classificacao;
 import aprendizagem.DataSet;
+import aprendizagem.knn.Classificacao;
 import utils.Utils;
 
 public class Relatorio {

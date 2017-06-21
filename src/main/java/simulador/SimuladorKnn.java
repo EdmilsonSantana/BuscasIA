@@ -2,10 +2,10 @@ package simulador;
 
 import java.util.List;
 
-import aprendizagem.Classificacao;
 import aprendizagem.DataSet;
-import aprendizagem.Knn;
-import aprendizagem.distancias.Distancia;
+import aprendizagem.knn.Classificacao;
+import aprendizagem.knn.Knn;
+import aprendizagem.knn.distancias.Distancia;
 import aprendizagem.relatorio.Relatorio;
 import aprendizagem.transformacoes.Normalizacao;
 import aprendizagem.transformacoes.Transformacao;
