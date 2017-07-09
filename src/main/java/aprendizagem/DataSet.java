@@ -14,11 +14,10 @@ import aprendizagem.transformacoes.Transformacao;
 import utils.Utils;
 
 public class DataSet {
-	
+
 	private static final String DATA_DIR = "./aprendizagem/";
 	private List<Amostra> treino;
 	private List<Amostra> teste;
-	
 
 	public DataSet(String arquivoTreino, String arquivoTeste, Integer indexClassificacao) {
 		this.treino = inicializarAmostras(Utils.lerCSV(DATA_DIR + arquivoTreino), indexClassificacao);
@@ -161,5 +160,30 @@ public class DataSet {
 
 	public Integer getQuantidadeTestes() {
 		return this.teste.size();
+	}
+
+	public void gerarCsvTreino() {
+
+		Utils.escreverCsv(this.gerarCsv(this.treino), "dataset-treino.csv");
+	}
+
+	public void gerarCsvTeste() {
+
+		Utils.escreverCsv(this.gerarCsv(this.teste), "dataset-teste.csv");
+	}
+
+	private String gerarCsv(List<Amostra> amostras) {
+
+		StringBuilder csv = new StringBuilder();
+
+		for (Amostra amostra : amostras) {
+			csv.append(amostra.toString()
+					.replace("[", "").replace("]", ""));
+			csv.append(",");
+			csv.append(amostra.getClassificacao());
+			csv.append("\n");
+		}
+
+		return csv.toString();
 	}
 }

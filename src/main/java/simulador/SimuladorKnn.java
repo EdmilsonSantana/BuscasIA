@@ -20,6 +20,8 @@ public class SimuladorKnn {
 		dataSet.converter(new ConversaoData("yyyy-MM-dd HH:mm:ss"), 2);
 		dataSet.limpar(new Limpeza(), 1);
 		dataSet.normalizar(new Normalizacao(), 1, 2, 3, 4, 5);
+		dataSet.gerarCsvTreino();
+		dataSet.gerarCsvTeste();
 
 		for (int k = 1; k <= 11; k += 2) {
 
