@@ -7,25 +7,29 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import aprendizagem.knn.Classificacao;
+import aprendizagem.transformacoes.Conversao;
+import aprendizagem.transformacoes.Limpeza;
 import aprendizagem.transformacoes.Normalizacao;
 import aprendizagem.transformacoes.Transformacao;
 import utils.Utils;
 
 public class DataSet {
- //https://archive.ics.uci.edu/ml/datasets/abalone
+	
 	private static final String DATA_DIR = "./aprendizagem/";
 	private List<Amostra> treino;
 	private List<Amostra> teste;
+	
 
 	public DataSet(String arquivoTreino, String arquivoTeste, Integer indexClassificacao) {
 		this.treino = inicializarAmostras(Utils.lerCSV(DATA_DIR + arquivoTreino), indexClassificacao);
 		this.teste = inicializarAmostras(Utils.lerCSV(DATA_DIR + arquivoTeste), indexClassificacao);
+		Utils.getLogger().info(String.format("Treino: %d - Teste: %d", treino.size(), teste.size()));
 	}
 
-	public DataSet(String arquivoDados, Integer indexClassificacao, Integer porcentagemTreino) {
+	public DataSet(String arquivoDados, Integer indexClassificacao, Double... porcentagemPorClassificacao) {
 		this.treino = new ArrayList<>();
 		this.teste = new ArrayList<>();
-		agruparAmostras(inicializarAmostras(Utils.lerCSV(DATA_DIR + arquivoDados), indexClassificacao), porcentagemTreino);
+		agruparAmostras(inicializarAmostras(Utils.lerCSV(DATA_DIR + arquivoDados), indexClassificacao), porcentagemPorClassificacao);
 	}
 
 	private List<Amostra> inicializarAmostras(List<String[]> csv, Integer indexClassificacao) {
@@ -49,6 +53,17 @@ public class DataSet {
 		}
 	}
 
+	public void limpar(Limpeza limpeza, Integer coluna) {
+
+		Utils.getLogger().info("Realizando limpeza dos dados...");
+
+		List<Amostra> amostras = new ArrayList<>();
+		amostras.addAll(this.teste);
+		amostras.addAll(this.treino);
+
+		limpeza.remover(amostras, coluna);
+	}
+
 	public void transformar(Transformacao transformacao, Integer... colunas) {
 
 		Utils.getLogger().info("Transformando categóricos em númericos...");
@@ -62,10 +77,23 @@ public class DataSet {
 		}
 	}
 
-	public void agruparAmostras(List<Amostra> amostras, Integer porcentagemTreino) {
+	public void converter(Conversao conversao, Integer... colunas) {
+
+		Utils.getLogger().info("Convertendo valores...");
+
+		List<Amostra> amostras = new ArrayList<>();
+		amostras.addAll(this.teste);
+		amostras.addAll(this.treino);
+
+		for (Integer coluna : colunas) {
+			conversao.converter(amostras, coluna);
+		}
+	}
+
+	public void agruparAmostras(List<Amostra> amostras, Double... porcentagemPorClassificacao) {
 
 		Map<Classificacao, List<Amostra>> classificacoes = this.contarClassificacoes(amostras);
-
+		Integer indexClassificacao = 0;
 		for (Entry<Classificacao, List<Amostra>> entry : classificacoes.entrySet()) {
 
 			List<Amostra> amostrasAgrupadas = entry.getValue();
@@ -73,13 +101,15 @@ public class DataSet {
 
 			Integer quantidade = amostrasAgrupadas.size();
 
-			Integer indexDivisao = Double.valueOf(quantidade * (porcentagemTreino / 100.0)).intValue();
+			Integer indexDivisao = Double.valueOf(quantidade * (porcentagemPorClassificacao[indexClassificacao] / 100.0)).intValue();
 
 			this.treino.addAll(amostrasAgrupadas.subList(0, indexDivisao));
 			this.teste.addAll(amostrasAgrupadas.subList(indexDivisao, quantidade));
 
-			Utils.getLogger().info(String.format("Classificação: %s - Quantidade: %d - Teste: %d - Treino: %d", classificacao, quantidade,
+			Utils.getLogger().info(String.format("Classificação: %s - Quantidade: %d - Treino: %d - Teste: %d", classificacao, quantidade,
 					indexDivisao, quantidade - indexDivisao));
+
+			indexClassificacao += 1;
 
 		}
 

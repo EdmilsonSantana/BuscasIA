@@ -45,7 +45,6 @@ public class Knn {
 
 			distanciaPorAmostra.put(amostra, distanciaAmostra);
 		}
-		// [[0.72, 0.8907563025210083, 0.1946902654867257, 0.6771737205595891, 0.6149966375252185, 0.5892034233048058, 0.4758345789735925, 0.0, 1, 0]]
 		return this.getClassificacaoVizinho(this.getVizinhosProximos(distanciaPorAmostra, vizinhos));
 	}
 
@@ -74,7 +73,7 @@ public class Knn {
 		
 		for (Entry<Classificacao, Integer> classificacao : classificacoes.entrySet()) {
 			
-			if (classificacaoVizinho == null || classificacao.getValue() < classificacaoVizinho.getValue()) {
+			if (classificacaoVizinho == null || classificacao.getValue() > classificacaoVizinho.getValue()) {
 				classificacaoVizinho = classificacao;
 			}
 		}

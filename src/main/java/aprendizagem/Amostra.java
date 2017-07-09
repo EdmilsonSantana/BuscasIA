@@ -21,6 +21,14 @@ public class Amostra {
 
 		return Double.valueOf(this.getTexto(index));
 	}
+	
+	public List<Double> getValores() {
+		List<Double> valores = new ArrayList<>();
+		for(String dado : this.dados) {
+			valores.add(Double.valueOf(dado));
+		}
+		return valores;
+	}
 
 	public String getTexto(Integer index) {
 		String dado = null;
