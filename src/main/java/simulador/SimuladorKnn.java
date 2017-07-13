@@ -7,7 +7,6 @@ import aprendizagem.knn.Classificacao;
 import aprendizagem.knn.Knn;
 import aprendizagem.knn.distancias.Distancia;
 import aprendizagem.relatorio.Relatorio;
-import aprendizagem.transformacoes.ConversaoData;
 import aprendizagem.transformacoes.Limpeza;
 import aprendizagem.transformacoes.Normalizacao;
 import utils.Utils;
@@ -17,11 +16,10 @@ public class SimuladorKnn {
 	public static void main(String[] args) {
 
 		DataSet dataSet = new DataSet("ocupacao-treino.csv", "ocupacao-teste.csv", 7);
-		dataSet.converter(new ConversaoData("yyyy-MM-dd HH:mm:ss"), 2);
+		// dataSet.converter(new ConversaoData("yyyy-MM-dd HH:mm:ss"), 2);
+		dataSet.limpar(new Limpeza(), 1);
 		dataSet.limpar(new Limpeza(), 1);
 		dataSet.normalizar(new Normalizacao(), 1, 2, 3, 4, 5);
-		dataSet.gerarCsvTreino();
-		dataSet.gerarCsvTeste();
 
 		for (int k = 1; k <= 11; k += 2) {
 
