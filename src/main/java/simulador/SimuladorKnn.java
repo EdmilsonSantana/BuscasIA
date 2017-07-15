@@ -15,12 +15,12 @@ public class SimuladorKnn {
 
 	public static void main(String[] args) {
 
-		DataSet dataSet = new DataSet("ocupacao-treino.csv", "ocupacao-teste.csv", 7);
+		DataSet dataSet = new DataSet("ocupacao.csv", 7, 21.06, 6.33);
 		// dataSet.converter(new ConversaoData("yyyy-MM-dd HH:mm:ss"), 2);
 		dataSet.limpar(new Limpeza(), 1);
 		dataSet.limpar(new Limpeza(), 1);
 		dataSet.normalizar(new Normalizacao(), 1, 2, 3, 4, 5);
-
+		
 		for (int k = 1; k <= 11; k += 2) {
 
 			classificar(k, Distancia.createInstance(Distancia.DISTANCIA_EUCLIDIANA), dataSet);
