@@ -1,230 +1,230 @@
-Jul 15, 2017 2:09:23 PM aprendizagem.DataSet agruparAmostras
+Jul 19, 2017 8:11:25 AM aprendizagem.DataSet agruparAmostras
 INFORMAÇÕES: Classificação: 1 - Quantidade: 4750 - Treino: 1000 - Teste: 3750
-Jul 15, 2017 2:09:23 PM aprendizagem.DataSet agruparAmostras
+Jul 19, 2017 8:11:25 AM aprendizagem.DataSet agruparAmostras
 INFORMAÇÕES: Classificação: 0 - Quantidade: 15810 - Treino: 1000 - Teste: 14810
-Jul 15, 2017 2:09:23 PM aprendizagem.DataSet agruparAmostras
+Jul 19, 2017 8:11:25 AM aprendizagem.DataSet agruparAmostras
 INFORMAÇÕES: 2000 amostras de treino
-Jul 15, 2017 2:09:23 PM aprendizagem.DataSet agruparAmostras
+Jul 19, 2017 8:11:25 AM aprendizagem.DataSet agruparAmostras
 INFORMAÇÕES: 18560 amostras de teste
-Jul 15, 2017 2:09:23 PM aprendizagem.DataSet limpar
+Jul 19, 2017 8:11:25 AM aprendizagem.DataSet limpar
 INFORMAÇÕES: Realizando limpeza dos dados...
-Jul 15, 2017 2:09:23 PM aprendizagem.DataSet limpar
+Jul 19, 2017 8:11:25 AM aprendizagem.DataSet limpar
 INFORMAÇÕES: Realizando limpeza dos dados...
-Jul 15, 2017 2:09:23 PM aprendizagem.DataSet normalizar
+Jul 19, 2017 8:11:25 AM aprendizagem.DataSet normalizar
 INFORMAÇÕES: Realizando normalização utilizando valores máximos e mínimos...
-Jul 15, 2017 2:09:24 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 8:11:25 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 1 vizinhos e com distância Euclidiana
-Jul 15, 2017 2:15:19 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:17:48 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 2:15:19 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:17:48 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12831 - Errou 1979
-Jul 15, 2017 2:15:19 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:17:48 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3333 - Errou 417
-Jul 15, 2017 2:15:19 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:17:48 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
 Taxa de Acerto: 0,870905
 
-Jul 15, 2017 2:15:19 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 8:17:48 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 1 vizinhos e com distância Manhattan
-Jul 15, 2017 2:21:09 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:23:27 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 2:21:09 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:23:27 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12730 - Errou 2080
-Jul 15, 2017 2:21:09 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:23:27 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3448 - Errou 302
-Jul 15, 2017 2:21:09 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:23:27 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
 Taxa de Acerto: 0,871659
 
-Jul 15, 2017 2:21:09 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 8:23:27 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 1 vizinhos e com distância Minkowski
-Jul 15, 2017 2:26:51 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:29:39 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 2:26:51 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:29:39 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 13105 - Errou 1705
-Jul 15, 2017 2:26:51 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:29:39 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3307 - Errou 443
-Jul 15, 2017 2:26:51 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:29:39 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
 Taxa de Acerto: 0,884267
 
-Jul 15, 2017 2:26:51 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 8:29:39 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 3 vizinhos e com distância Euclidiana
-Jul 15, 2017 2:31:37 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:35:49 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 2:31:37 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:35:49 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12881 - Errou 1929
-Jul 15, 2017 2:31:37 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:35:49 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3307 - Errou 443
-Jul 15, 2017 2:31:37 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:35:49 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
 Taxa de Acerto: 0,872198
 
-Jul 15, 2017 2:31:37 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 8:35:49 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 3 vizinhos e com distância Manhattan
-Jul 15, 2017 2:36:37 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:41:25 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 2:36:37 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:41:25 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12753 - Errou 2057
-Jul 15, 2017 2:36:37 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:41:25 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3479 - Errou 271
-Jul 15, 2017 2:36:37 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:41:25 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
 Taxa de Acerto: 0,874569
 
-Jul 15, 2017 2:36:37 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 8:41:25 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 3 vizinhos e com distância Minkowski
-Jul 15, 2017 2:41:16 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:47:34 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 2:41:16 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:47:34 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 13136 - Errou 1674
-Jul 15, 2017 2:41:16 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:47:34 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3235 - Errou 515
-Jul 15, 2017 2:41:16 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:47:34 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
 Taxa de Acerto: 0,882058
 
-Jul 15, 2017 2:41:16 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 8:47:34 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 5 vizinhos e com distância Euclidiana
-Jul 15, 2017 2:46:02 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:53:41 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 2:46:02 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:53:41 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12890 - Errou 1920
-Jul 15, 2017 2:46:02 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:53:41 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3393 - Errou 357
-Jul 15, 2017 2:46:02 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:53:41 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
 Taxa de Acerto: 0,877317
 
-Jul 15, 2017 2:46:02 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 8:53:41 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 5 vizinhos e com distância Manhattan
-Jul 15, 2017 2:50:52 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:59:16 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 2:50:52 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:59:16 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12828 - Errou 1982
-Jul 15, 2017 2:50:52 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 8:59:16 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3486 - Errou 264
-Jul 15, 2017 2:50:52 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 8:59:16 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
 Taxa de Acerto: 0,878987
 
-Jul 15, 2017 2:50:52 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 8:59:16 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 5 vizinhos e com distância Minkowski
-Jul 15, 2017 2:56:11 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:05:26 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 2:56:11 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 9:05:26 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 13149 - Errou 1661
-Jul 15, 2017 2:56:11 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 9:05:26 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3319 - Errou 431
-Jul 15, 2017 2:56:11 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:05:26 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
 Taxa de Acerto: 0,887284
 
-Jul 15, 2017 2:56:11 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 9:05:26 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 7 vizinhos e com distância Euclidiana
-Jul 15, 2017 3:01:02 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:11:35 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 3:01:02 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
-INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12844 - Errou 1966
-Jul 15, 2017 3:01:02 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 9:11:35 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12890 - Errou 1920
+Jul 19, 2017 9:11:35 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3409 - Errou 341
-Jul 15, 2017 3:01:02 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:11:35 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
-Taxa de Acerto: 0,875700
+Taxa de Acerto: 0,878179
 
-Jul 15, 2017 3:01:02 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 9:11:35 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 7 vizinhos e com distância Manhattan
-Jul 15, 2017 3:05:47 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:17:11 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 3:05:47 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
-INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12841 - Errou 1969
-Jul 15, 2017 3:05:47 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 9:17:11 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12843 - Errou 1967
+Jul 19, 2017 9:17:11 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3507 - Errou 243
-Jul 15, 2017 3:05:47 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:17:11 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
-Taxa de Acerto: 0,880819
+Taxa de Acerto: 0,880927
 
-Jul 15, 2017 3:05:47 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 9:17:11 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 7 vizinhos e com distância Minkowski
-Jul 15, 2017 3:10:33 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:23:20 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 3:10:33 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 9:23:20 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 13147 - Errou 1663
-Jul 15, 2017 3:10:33 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 9:23:20 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3344 - Errou 406
-Jul 15, 2017 3:10:33 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:23:20 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
 Taxa de Acerto: 0,888524
 
-Jul 15, 2017 3:10:33 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 9:23:20 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 9 vizinhos e com distância Euclidiana
-Jul 15, 2017 3:15:04 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:29:27 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 3:15:04 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
-INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12828 - Errou 1982
-Jul 15, 2017 3:15:04 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 9:29:27 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12832 - Errou 1978
+Jul 19, 2017 9:29:27 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3388 - Errou 362
-Jul 15, 2017 3:15:04 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:29:27 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
-Taxa de Acerto: 0,873707
+Taxa de Acerto: 0,873922
 
-Jul 15, 2017 3:15:04 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 9:29:27 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 9 vizinhos e com distância Manhattan
-Jul 15, 2017 3:19:40 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:35:02 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 3:19:40 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
-INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12821 - Errou 1989
-Jul 15, 2017 3:19:40 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 9:35:02 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12848 - Errou 1962
+Jul 19, 2017 9:35:02 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3508 - Errou 242
-Jul 15, 2017 3:19:40 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:35:02 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
-Taxa de Acerto: 0,879795
+Taxa de Acerto: 0,881250
 
-Jul 15, 2017 3:19:40 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 9:35:02 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 9 vizinhos e com distância Minkowski
-Jul 15, 2017 3:24:20 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:41:12 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 3:24:20 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 9:41:12 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 13145 - Errou 1665
-Jul 15, 2017 3:24:20 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 9:41:12 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3330 - Errou 420
-Jul 15, 2017 3:24:20 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:41:12 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
 Taxa de Acerto: 0,887662
 
-Jul 15, 2017 3:24:20 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 9:41:12 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 11 vizinhos e com distância Euclidiana
-Jul 15, 2017 3:28:52 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:47:19 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 3:28:52 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
-INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12802 - Errou 2008
-Jul 15, 2017 3:28:52 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 9:47:19 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12818 - Errou 1992
+Jul 19, 2017 9:47:19 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3394 - Errou 356
-Jul 15, 2017 3:28:52 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:47:19 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
-Taxa de Acerto: 0,872629
+Taxa de Acerto: 0,873491
 
-Jul 15, 2017 3:28:52 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 9:47:19 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 11 vizinhos e com distância Manhattan
-Jul 15, 2017 3:33:28 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:52:56 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 3:33:28 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
-INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12776 - Errou 2034
-Jul 15, 2017 3:33:28 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 9:52:56 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 12846 - Errou 1964
+Jul 19, 2017 9:52:56 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3509 - Errou 241
-Jul 15, 2017 3:33:28 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:52:56 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
-Taxa de Acerto: 0,877425
+Taxa de Acerto: 0,881196
 
-Jul 15, 2017 3:33:28 PM aprendizagem.knn.Knn classificar
+Jul 19, 2017 9:52:56 AM aprendizagem.knn.Knn classificar
 INFORMAÇÕES: Classificando com 11 vizinhos e com distância Minkowski
-Jul 15, 2017 3:38:07 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:59:06 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: Gerando matriz de confusão...
-Jul 15, 2017 3:38:07 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 9:59:06 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 0 - Total: 14810 - Acertou: 13141 - Errou 1669
-Jul 15, 2017 3:38:07 PM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
+Jul 19, 2017 9:59:06 AM aprendizagem.relatorio.Relatorio calcularTaxaAcerto
 INFORMAÇÕES: Classificacao: 1 - Total: 3750 - Acertou: 3342 - Errou 408
-Jul 15, 2017 3:38:07 PM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
+Jul 19, 2017 9:59:06 AM aprendizagem.relatorio.Relatorio gerarRelatorioCSV
 INFORMAÇÕES: 
 Taxa de Acerto: 0,888093
 
