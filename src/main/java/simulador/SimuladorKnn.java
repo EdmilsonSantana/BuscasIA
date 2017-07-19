@@ -20,7 +20,7 @@ public class SimuladorKnn {
 		dataSet.limpar(new Limpeza(), 1);
 		dataSet.limpar(new Limpeza(), 1);
 		dataSet.normalizar(new Normalizacao(), 1, 2, 3, 4, 5);
-		
+
 		for (int k = 1; k <= 11; k += 2) {
 
 			classificar(k, Distancia.createInstance(Distancia.DISTANCIA_EUCLIDIANA), dataSet);
